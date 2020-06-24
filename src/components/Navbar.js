@@ -1,13 +1,11 @@
 import React, {Component} from 'react';
+import {Link} from 'react-router-dom';
 
 
 export default class Navbar extends Component {
     render() {
         return(
-        
-            <div>
-                <h3>aici ----- Navbar</h3>
-            </div>
+        <nav classNavbar="navbar navbar-expand-sm navbar-dark px-sm-5 "></nav>
             
         )
     }
