@@ -3,7 +3,7 @@
   --mainDarkPurple: #733380;
    --mainlightPurple: #914fa6;
    --mainPink: #da81b5;
-   --mainYellow: #ffffbf;
+   --mainWhite: #ffffff;
    --mainOrange: #ff8242;
    --mainDark: #232528;
 
@@ -12,7 +12,8 @@
 
 body {
   font-family: 'Open Sans', sans-serif !important;
-  background: var(--mainYellow) !important;
+  background: var(--mainPink) !important;
+  
   color: var(--mainDark);
 }
 
@@ -29,4 +30,11 @@ body {
 .text-bright
 {
   color: var(--mainlightPurple) ;
+}
+.navbar {
+  background-color: var(--mainDarkPurple);
+}
+.navbar-brand{
+  width: 25%;
+  height: 50%;
 }

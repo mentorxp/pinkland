@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 
 
-export default class Details extends Component {
+ class Details extends Component {
     render() {
         return(
             <div>
@@ -11,3 +11,4 @@ export default class Details extends Component {
         )
     }
 }
+export default Details;

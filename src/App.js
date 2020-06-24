@@ -1,16 +1,14 @@
 import React, { Component } from 'react';
 import {Switch, Route} from 'react-router-dom';
-import logo from './logo.svg';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import logoPink from './logoPink.png';
 import './App.css';
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHome } from "@fortawesome/free-solid-svg-icons";
+import "bootstrap/dist/css/bootstrap.min.css";
 import Navbar from './components/Navbar';
 import ProductList from './components/ProductList';
-
 import Details from './components/Details';
 import Cart from './components/Cart';
 import Default from './components/Default';
+
 
 class App extends Component {
   render() {
