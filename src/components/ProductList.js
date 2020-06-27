@@ -1,14 +1,26 @@
 import React, { Component } from 'react';
 import Product from './Product';
+import Titlestyle from './Titlestyle';
 
 
  class ProductList extends Component {
+     state={
+         products:[]
+     }
     render() {
         return (
-            <div>
-               <Product /> 
-               <h3>Pagina ----ProductList</h3>
-          </div>
+           <React.Fragment>
+               <div className="py-5">
+                   <div className="container">
+<Titlestyle name="Flowers" title="Gallery"/>
+                       <div className="row">
+                           
+                       </div>
+
+                   </div>
+               </div>
+
+           </React.Fragment> 
         )
     }
 }

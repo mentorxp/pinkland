@@ -2,39 +2,55 @@
 {
   --mainDarkPurple: #733380;
    --mainlightPurple: #914fa6;
-   --mainPink: #da81b5;
-   --mainWhite: #ffffff;
+   --mainGreen: #00a388;
+   --mainBlack: #000000;
    --mainOrange: #ff8242;
    --mainDark: #232528;
+   --textpink: #f987c5;
+   --textgreen: #d5fd6e;
+   --textWhite: #ffffff;
 
 
 }
 
 body {
-  font-family: 'Open Sans', sans-serif !important;
-  background: var(--mainPink) !important;
+  font-family: 'Indie Flower', cursive !important;
+  background: var(--mainGreen) !important;
   
-  color: var(--mainDark);
+  color: var(--mainBlack);
 }
 
 .text-title {
-  font-family: 'Caveat', cursive;
+  font-family: 'Indie Flower', cursive;
   letter-spacing: 0.3rem;
   text-transform: uppercase;
+  
 
 }
 .text-Purple {
   color: var(--mainDarkPurple);
 }
-
+.text-Pink
+{
+color: var(--textpink);
+}
+.text-Green {
+  color: var(--textgreen)
+}
+.text-White
+{
+  color: var(--textWhite);
+}
 .text-bright
 {
   color: var(--mainlightPurple) ;
 }
 .navbar {
-  background-color: var(--mainDarkPurple);
+  background-color: var(--mainOrange);
+  
 }
 .navbar-brand{
   width: 25%;
   height: 50%;
 }
+

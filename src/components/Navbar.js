@@ -2,6 +2,9 @@ import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
 import logoPink from '../logoPink.png';
 import "bootstrap/dist/css/bootstrap.min.css";
+import styled from 'styled-components';
+import {Buttondesign} from './Buttonstyle';
+
 
 
 
@@ -14,13 +17,14 @@ class Navbar extends Component {
            </Link>
         <ul className="navbar-nav align-items-center">
             <li className="nav-item ml-5>">
-                <Link to="/" className="nav-link">Flowers</Link>
+                <Link to="/" className="nav-link"></Link>
             </li>
         </ul>
         <Link to='/cart' className="ml-auto">
-            <button>
-                <i className="fas fa-shopping-basket" />
-            </button>
+            <Buttondesign>
+                <span className="mr-2"></span>
+                <i className="fas fa-shopping-basket" /> CART
+            </Buttondesign>
         </Link>
 
         </nav>
