@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 
 
- class Details extends Component {
+ class Detalii extends Component {
     render() {
         return(
             <div>
@@ -11,4 +11,4 @@ import React, { Component } from 'react';
         )
     }
 }
-export default Details;
+export default Detalii;

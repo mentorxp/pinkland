@@ -4,9 +4,9 @@ import logoPink from './logoPink.png';
 import './App.css';
 import "bootstrap/dist/css/bootstrap.min.css";
 import Navbar from './components/Navbar';
-import ProductList from './components/ProductList';
-import Details from './components/Details';
-import Cart from './components/Cart';
+import ProdusLista from './components/ProdusLista';
+import Detalii from './components/Detalii';
+import Coscump from './components/Coscump';
 import Default from './components/Default';
 
 
@@ -16,9 +16,9 @@ class App extends Component {
       <React.Fragment>
        <Navbar />
          <Switch>
-           <Route exact path="/" component={ProductList} />
-          <Route path="/details" component ={Details}/>
-         <Route path="/cart" component ={Cart}/>
+           <Route exact path="/" component={ProdusLista} />
+          <Route path="/details" component ={Detalii}/>
+         <Route path="/cart" component ={Coscump}/>
          
          <Route component={Default} />
          </Switch>

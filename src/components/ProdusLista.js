@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import Product from './Product';
+import Produs from './Produs';
 import Titlestyle from './Titlestyle';
 
 
- class ProductList extends Component {
+ class ProdusLista extends Component {
      state={
          products:[]
      }
@@ -24,4 +24,4 @@ import Titlestyle from './Titlestyle';
         )
     }
 }
-export default ProductList;
+export default ProdusLista;
