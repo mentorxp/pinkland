@@ -34,15 +34,18 @@ class Produs extends Component {
         )
     }
 }
-
-/*Product.propTypes = {
-    product:PropTypes.shape({
+// verific codul 
+Produs.propTypes = {
+    produs:PropTypes.shape({
         id:PropTypes.number,
         img:PropTypes.string,
-        title:PropsType.string,
+        title:PropTypes.string,
         price:PropTypes.number,
-    })
-};*/
+        inCart:PropTypes.bool
+    }).isRequired
+};
+
+
 const ProductWrapper = styled.div`
   
  .card{
