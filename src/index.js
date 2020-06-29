@@ -4,13 +4,18 @@ import './index.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import App from './App';
 import {BrowserRouter as Router} from 'react-router-dom';
+import {ProductProvider} from './textDescriere';
 
 
 
 ReactDOM.render(
+  <ProductProvider>
+
+  
   <Router>
     <App />
-  </Router>,
+  </Router>
+  </ProductProvider>,
   document.getElementById('root')
 );
 

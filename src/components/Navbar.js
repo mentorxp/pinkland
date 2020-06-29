@@ -28,6 +28,7 @@ class Navbar extends Component {
         </Link>
 
         </nav>
+        
             
         )
     }

@@ -46,7 +46,8 @@ color: var(--textpink);
   color: var(--mainlightPurple) ;
 }
 .navbar {
-  background-color: var(--mainOrange);
+  background-color: var(--textpink);
+  
   
 }
 .navbar-brand{
