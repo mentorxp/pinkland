@@ -6,15 +6,29 @@ const ProductContext = React.createContext();
 // aici avem client
 export default class ProductProvider extends Component {
     state = {
-        products:databaseFlori,
-        detailProduct: detailProduct
+        products: [],
+       detailProduct : detailProduct
+    };
+
+    componentDidMount(){
+        this.setProducts();
     }
+    setProducts = () =>{
+        let tempProduse = [];
+        databaseFlori.forEach(item => {
+            const singleItem = {...item};
+            tempProduse = [...tempProduse, singleItem];
+        });
+        this.setState(()=> {
+            return {products:tempProduse};
+        });
+    };
     handleDetail = () => {
         console.log('hello from detail');
-    }
+    };
     addToCart = () =>{
         console.log('hello from add to Coscump');
-    }
+    };
     render() {
         return (
             <div>

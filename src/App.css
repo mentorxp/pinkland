@@ -55,13 +55,3 @@ color: var(--textpink);
   height: 50%;
 }
 
-.card {
-  margin: 1rem;
-  display: flex;
-  
-}
-.card-footer
-{
-  padding: 0.9rem;
-  margin: 1rem;
-}

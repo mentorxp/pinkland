@@ -4,16 +4,17 @@ import styled from 'styled-components';
 import {Link} from 'react-router-dom';
 import {ProductConsumer} from '../textDescriere';
 import { Buttondesign } from './Buttonstyle';
+import PropTypes from 'prop-types';
 
 
 class Produs extends Component {
     render() {
         const {id, title, img, price, inCart } = this.props.produs; 
         return (
-<ProductWrapper className = " col-9 mx-auto col-md col-lg-3">
+<ProductWrapper className = "col-9 mx-auto col-md col-lg-3">
 <div className="card">
     <div className="img-container mx-5">
-        onClick={() => console.log('you just clicked on this image')}>
+        onClick={() => console.log('you just clicked on this image')}
         <Link to="/details">
             < img src={img} alt="produs" className="card-img-top" />
         </Link>
@@ -33,7 +34,40 @@ class Produs extends Component {
         )
     }
 }
-const ProductWrapper = styled.div` `
+
+/*Product.propTypes = {
+    product:PropTypes.shape({
+        id:PropTypes.number,
+        img:PropTypes.string,
+        title:PropsType.string,
+        price:PropTypes.number,
+    })
+};*/
+const ProductWrapper = styled.div`
+  
+ .card{
+     border-color: transparent;
+     display: flex;
+     margin: 1rem;
+     background: rgba(255,255,255, 0.4);
+     border-style: inset;
+     border-color: black;
+ }
+ .card-footer{
+     display: flex;
+     background: rgba(255,255,255,0.7);
+ }
+ &:hover 
+ {
+    .card{
+transform: scale(1.2);
+transition: all 1s linear;
+background-color: white;
+    }
+    .cart-button{
+        background-color:var(--textpink)
+        
+    } `
 
 
 
