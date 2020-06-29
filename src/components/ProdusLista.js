@@ -10,10 +10,11 @@ import {ProductConsumer} from '../textDescriere'
     
         return (
            <React.Fragment>
-               <div className="py-5">
+               <div className="my-9">
                    <div className="container">
 <Titlestyle name="Flowers" title="Gallery"/>
                        <div className="row">
+                           
                            <ProductConsumer>
                                {value=> {
 return value.products.map( produs =>{

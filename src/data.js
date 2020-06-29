@@ -37,7 +37,7 @@ export const databaseFlori = [
   },
   {
     id: 4,
-    title: "Circus of Celebration",
+    title: "Circus of colours",
     img: "img/product-4.png",
     price: 18,
     company: "Pinkland",
@@ -61,7 +61,7 @@ export const databaseFlori = [
   },
   {
     id: 6,
-    title: "Red and yellow sumemer mix",
+    title: "Red & yellow mix",
     img: "img/product-6.png",
     price: 17,
     company: "Pinkland",
@@ -85,7 +85,7 @@ export const databaseFlori = [
   },
   {
     id: 8,
-    title: "Tulips and Narcissus",
+    title: "Tulips & Narcissus",
     img: "img/product-8.png",
     price: 19,
     company: "Pinkland",
