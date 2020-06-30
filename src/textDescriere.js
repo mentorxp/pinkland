@@ -26,8 +26,8 @@ export default class ProductProvider extends Component {
     handleDetail = () => {
         console.log('hello from detail');
     };
-    addToCart = () =>{
-        console.log('hello from add to Coscump');
+    addToCart = id =>{
+        console.log(`hello from cart.id is ${id}`);
     };
     render() {
         return (
