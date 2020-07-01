@@ -27,7 +27,7 @@ export default class ProductProvider extends Component {
         console.log('hello from detail');
     };
     addToCart = id =>{
-        console.log(`hello from cart.id is ${id}`);
+        console.log(`aveti in cos.id is ${id}`);
     };
     render() {
         return (
