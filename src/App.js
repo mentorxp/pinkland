@@ -7,6 +7,7 @@ import ProdusLista from './components/ProdusLista';
 import Detalii from './components/Detalii';
 import Coscump from './components/Coscump';
 import Default from './components/Default';
+import Modal from './components/Modal';
   
 
 class App extends Component {
@@ -21,6 +22,7 @@ class App extends Component {
          
          <Route component={Default} />
          </Switch>
+         <Modal/>
         
           </React.Fragment>
     );

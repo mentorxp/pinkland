@@ -7,7 +7,7 @@
    --mainOrange: #ff8242;
    --mainDark: #232528;
    --textpink: #f987c5;
-   --textgreen: #d5fd6e;
+   --textgreen: #98fb98;
    --textWhite: #ffffff;
 
 
@@ -58,3 +58,13 @@ color: var(--textpink);
   height: 50%;
 }
 
+.content-product img{
+  padding-bottom: 50px;
+  position: center;
+  
+
+}
+.content-info{
+  padding: 30px;
+  margin: 3rem;
+}

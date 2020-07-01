@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import Produs from './Produs';
+import Product from './Produs';
 import Titlestyle from './Titlestyle';
 import {ProductConsumer} from '../textDescriere'
 
 
- class ProdusLista extends Component {
+ class ProductList extends Component {
      
     render() {
     
@@ -17,8 +17,8 @@ import {ProductConsumer} from '../textDescriere'
                            
                            <ProductConsumer>
                                {value=> {
-return value.products.map( produs =>{
-return <Produs key="produs.id" produs={produs}
+return value.products.map( product =>{
+return <Product key="product.id" product={product}
 />;
 })
                                }}
@@ -32,4 +32,4 @@ return <Produs key="produs.id" produs={produs}
         )
     }
 }
-export default ProdusLista;
+export default ProductList;

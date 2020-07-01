@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 
 
- class Coscump extends Component {
+ class Cart extends Component {
     render() {
         return(
             <div>
@@ -11,4 +11,4 @@ import React, { Component } from 'react';
         )
     }
 }
-export default Coscump;
+export default Cart;

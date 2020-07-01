@@ -7,23 +7,30 @@ import { Buttondesign } from './Buttonstyle';
 import PropTypes from 'prop-types';
 
 
-class Produs extends Component {
+class Product extends Component {
     render() {
-        const {id, title, img, price, inCart } = this.props.produs; 
+        const {id, title, img, price, inCart } = this.props.product; 
         return (
 <ProductWrapper className = "col-9 mx-auto col-md col-lg-3">
 <div className="card">
-    <div className="img-container mx-5">
-        onClick={() => console.log('you just clicked on this image')}
+    <ProductConsumer>
+
+    {value => (
+    <div className="img-container mx-5"
+        onClick={() =>  value.handleDetailProduct(id)}>
         <Link to="/details">
             < img src={img} alt="produs" className="card-img-top" />
         </Link>
         <Buttondesign className="cart-button" disabled={inCart ? true : false}
-         onClick={()=>{console.log("produsul este adaugat in cos");}}>
+         onClick={()=>{
+             value.addToCart(id);
+             value.openModal(id);
+             }}>
         {inCart ? (<p className="text-capitalize mb-0" disabled>{" "}
-         Adaugat In Cos</p>):(<i className="fas fa-shopping-basket"/>)}
+         Added in Cart</p>):(<i className="fas fa-shopping-basket"/>)}
           </Buttondesign>
-    </div>
+    </div> )}
+    </ProductConsumer>
     <div className="card-footer d-flex justify-content-between">
         <p className="align-self-center mb-0">{title}</p>
         <h5 className="price">£ <span>{price}</span></h5>
@@ -35,7 +42,7 @@ class Produs extends Component {
     }
 }
 // verific codul 
-Produs.propTypes = {
+Product.propTypes = {
     produs:PropTypes.shape({
         id:PropTypes.number,
         img:PropTypes.string,
@@ -74,4 +81,4 @@ background-color: white;
 
 
 
-export default Produs;
+export default Product;
